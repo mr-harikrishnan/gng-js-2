@@ -1,0 +1,1 @@
+document.getElementsByTageName("img") -  this is for get all some elements in inside of the document

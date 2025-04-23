@@ -1,0 +1,15 @@
+DOM
+Document Object Model
+
+what is dom?
+DOM is a programing interface for web documet.
+Porgramers can chage document structure,style, and content using dom.
+The DOM represents  the document as nodes  and objects.
+
+
+what is window?
+window is a global object.include screen and all content.
+
+what is docment?
+document is inside of the window.
+
