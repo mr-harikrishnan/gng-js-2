@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice some dom</title>
+</head>
+
+<body>
+    <script>
+
+        document.body.style.margin="0"
+        document.body.style.padding="0"
+
+    var container = document.createElement("div")
+
+
+        var header = document.createElement("div")  // 1st div
+        header.style.height = "100%"
+        header.style.background = "blue"
+        header.style.padding="20px"
+
+
+        var heading = document.createElement("h1")
+        heading.innerText = "HEADING"
+        heading.style.color = "white"
+        heading.style.textAlign="center"
+        header.appendChild(heading)
+
+        container.appendChild(header)
+
+
+        var img=document.createElement("img")     //   2nd div
+        img.setAttribute("src","https://cdn.pixabay.com/photo/2016/09/04/20/14/sunset-1645103_1280.jpg")
+        img.style.width="100%"
+        img.style.marginTop="10px"
+        container.appendChild(img)
+
+
+
+
+
+
+
+
+
+    document.body.appendChild(container)
+    </script>
+</body>
+
+</html>

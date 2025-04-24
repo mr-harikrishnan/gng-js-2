@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User list edit</title>
+    <link rel="stylesheet" href="./user_list_edt.css">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Column 1: Form Input Fields -->
+        <form onsubmit="onSubmit();return false;">
+            <div class="column1">
+                <div class="box">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter Name">
+                </div>
+                <div class="box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Email">
+                </div>
+                <div class="box">
+                    <label for="mobile">Mobile</label>
+                    <input type="text" id="mobile" placeholder="Enter Mobile">
+                </div>
+                <div class="box">
+                    <label for="country">Country</label>
+                    <select id="country">
+                        <option value="india">India</option>
+                        <option value="america">America</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <label for="state">State</label>
+                    <select id="state">
+                        <option value="tamilnadu">Tamilnadu</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="texas">Texas</option>
+                        <option value="florida">Florida</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <label for="city">City</label>
+                    <select id="city">
+                        <option value="chennai">Chennai</option>
+                        <option value="coimbatore">Coimbatore</option>
+                        <option value="newyork">New York</option>
+                        <option value="washington">Washington</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+
+        <!-- Column 2: Single Column Table for Instructions -->
+        <div class="column2">
+            <div class="box">
+                <table style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                            <th>Country</th>
+                            <th>State</th>
+                            <th>City</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userBody">
+                        <!-- Rows will be added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="./user_list_edit.js"></script>
+</body>
+
+</html>

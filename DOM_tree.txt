@@ -1,1 +1,5 @@
 document.getElementsByTageName("img") -  this is for get all some elements in inside of the document
+
+document build like one tree type structure.
+
+travel any way for modyfing elements.

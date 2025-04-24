@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        for (let i = 0; i < 100; i++) {
+
+            let random=Math.floor(Math.random()*150)
+            let randomr=Math.floor(Math.random()*150)
+            let randomg=Math.floor(Math.random()*150)
+            let randomb=Math.floor(Math.random()*150)
+
+            var box = document.createElement("div")
+            box.style.width = random+"px"
+            box.style.height = randomr+"px"
+            box.style.borderRadius=random+"px"
+            box.style.background = "rgb("+randomr+","+randomg+","+randomb+")"
+            box.style.margin="5px"
+            document.body.appendChild(box)
+        }
+
+
+
+    </script>
+</body>
+
+</html>
